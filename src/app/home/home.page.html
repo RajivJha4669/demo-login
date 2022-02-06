@@ -1,20 +1,36 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" class="ion-padding">
+    <div align="center">
+        <div class="title-wrapper">
+            <ion-label color="light">Login</ion-label>
+        </div>
+        <div class="segments-wrapper">
+            <ion-segment mode="md" [(ngModel)]="selectedSegment">
+                <ion-segment-button value="ARBEITNEHMER">
+                    <ion-label>ARBEITNEHMER</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="ARBEITGEBER">
+                    <ion-label>ARBEITGEBER</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+    </div>
+    <div class="input-wrapper">
+        <ion-input type="email" placeholder="Email"></ion-input>
+        <ion-input type="password" placeholder="Passwort"></ion-input>
+    </div>
+    <div align="center" class="forgot-password-wrapper">
+        <ion-label color="light">Passwort vergessen?</ion-label>
+        <div class="action-wrapper">
+            <div class="new-user">
+                <ion-label>Neuer Nutzer?</ion-label>
+                <ion-label color="light">Account erstellen</ion-label>
+            </div>
+        </div>
+    </div>
+    <div class="login-button">
+        <ion-label>Login</ion-label>
+        <ion-button slot="end" expand="full">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+    </div>
 </ion-content>

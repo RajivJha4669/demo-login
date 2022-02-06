@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SegmentButtons } from './type/segment-buttons';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public selectedSegment: SegmentButtons = "ARBEITNEHMER"
+
+  constructor() { }
 
 }
