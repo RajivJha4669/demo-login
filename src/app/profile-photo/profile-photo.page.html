@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      PROFIL-FOTO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">PROFIL-FOTO</ion-label><br>
+      <ion-label class="input-subtitle">Wählen Sie ein representatives Profilfoto aus oder machen Sie ein Selfie
+      </ion-label>
+    </div>
+    <div class="input-wrapper">
+      <input type="file" #file hidden>
+      <img src="../../assets/profile-outline.svg" (click)="file.click()">
+    </div>
+  </div>
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">KURZBESCHREIBUNG</ion-label>
+    </div>
+    <div class="input-wrapper">
+      <ion-textarea col="4" rows="12" placeholder="Kurzbeschreibung (max. 150 Satzzeichen)"></ion-textarea>
+    </div>
+  </div>
+  <div class="further-button">
+    <ion-label>WEITER</ion-label>
+    <ion-button slot="end" expand="full" (click)="navigateTo()">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

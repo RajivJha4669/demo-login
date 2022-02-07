@@ -18,6 +18,8 @@ ion-content {
         --color-checked: #000;
         --color:#fff;
         --indicator-color:transparent;
+        --padding-top: 8px;
+      --padding-bottom: 8px;
       }
     }
   }
@@ -26,9 +28,8 @@ ion-content {
     ion-input{
       margin-bottom: 20px;
       border: 1px solid #fff;
-      --padding-top: 15px;
-      --padding-bottom: 15px;
-      --color:#fff;
+      --padding-top: 8px;
+      --padding-bottom: 8px;
     }
   }
   .forgot-password-wrapper{
@@ -61,17 +62,21 @@ ion-content {
       padding-left: 24px;
       text-transform: uppercase;
       font-weight:600;
-      font-size:19px;
+      font-size:16px;
     }
     ion-button{
       --background: #000000;
       --padding-start:0;
       --padding-end:0;
-      height: 55px;
-      width: 55px;
+        height: 45px;
+        width: 45px;
       ion-icon{
        font-size: 26.63px;
       }
     }
+  }
+  ion-input{
+      --background:#fff;
+      --color:#000;
   }
 }

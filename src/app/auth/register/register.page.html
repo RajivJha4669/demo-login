@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      ACCOUNT EINRICHTEN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">E-MAIL-ADRESSE</ion-label><br>
+      <ion-label class="input-subtitle">Registrieren Sie Ihre E-Mail-Adresse</ion-label>
+    </div>
+    <div class="input-wrapper">
+      <ion-input type="email" inputmode="email" placeholder="Email"></ion-input>
+    </div>
+  </div>
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">PASSWORT</ion-label><br>
+      <ion-label class="input-subtitle ion-text-wrap">Legen Sie ein sicheres Passwort fest (mindestens 6 Zeichen)
+      </ion-label>
+    </div>
+    <div class="input-wrapper">
+      <div class="password-input-container">
+        <ion-input #pswrd type="password" placeholder="Passwort"></ion-input>
+        <span (click)="togglePassword(pswrd)">
+          <ion-icon [name]="pswrd.type === 'text'?'eye-outline':'eye-off-outline'"></ion-icon>
+        </span>
+      </div>
+      <div class="password-input-container">
+        <ion-input #cnfrmPswrd type="password" placeholder="Confirm Passwort"></ion-input>
+        <span (click)="togglePassword(cnfrmPswrd)">
+          <ion-icon [name]="cnfrmPswrd.type === 'text'?'eye-outline':'eye-off-outline'" name="eye-outline"></ion-icon>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="terms-condition-container">
+    <ion-label>Mit der Registierung stimmen Sie den <u> AGBs</u> und der <u> Datenschutzerklärung </u> zu.</ion-label>
+  </div>
+  <div class="registration-button">
+    <ion-label>REGISTRIEREN</ion-label>
+    <ion-button slot="end" expand="full" (click)="open()">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

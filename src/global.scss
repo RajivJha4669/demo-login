@@ -29,3 +29,11 @@
     margin: 0;
     padding: 0;
 }
+
+.intro-slide{
+    .swiper-pagination {
+        text-align: left;
+        top: 3em;
+        z-index: -1;
+    }
+}

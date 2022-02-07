@@ -1,0 +1,91 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      PROFI EINRICHTEN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">NAME</ion-label><br>
+      <ion-label class="input-subtitle">Geben Sie ihren vollständigen Namen an</ion-label>
+    </div>
+    <div class="input-wrapper">
+      <ion-input type="text" inputmode="text" placeholder="Vorname"></ion-input>
+      <ion-input type="text" inputmode="text" placeholder="Nachname"></ion-input>
+      <ion-input type="text" inputmode="text" placeholder="Firmenname (optional)"></ion-input>
+    </div>
+  </div>
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">GEBURTSTAG</ion-label><br>
+      <ion-label class="input-subtitle">Nennen Sie Ihren Geburtstag</ion-label>
+    </div>
+    <div class="input-wrapper">
+      <ion-row>
+        <ion-col size="3">
+          <ion-select placeholder="Tag">
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col size="6">
+          <ion-select placeholder="Monat">
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col size="3">
+          <ion-select placeholder="Jahr">
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+            <ion-select-option>OPTIONS</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">GESCHLECHT</ion-label><br>
+      <ion-label class="input-subtitle">Geben Sie Ihr Geschlecht an</ion-label>
+    </div>
+    <div class="input-wrapper">
+      <ion-radio-group>
+        <ion-row>
+          <ion-col size="4">
+            <div class="radio-btn">
+              <ion-radio value="WEIBLICH"></ion-radio>
+              <ion-label>WEIBLICH</ion-label>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+            <div class="radio-btn">
+              <ion-radio value="MÄNNLICH"></ion-radio>
+              <ion-label>MÄNNLICH</ion-label>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+            <div class="radio-btn">
+              <ion-radio value="DIVERS"></ion-radio>
+              <ion-label>DIVERS</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-radio-group>
+    </div>
+  </div>
+  <div class="further-button">
+    <ion-label>WEITER</ion-label>
+    <ion-button slot="end" expand="full" (click)="changeProfilePhoto()">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

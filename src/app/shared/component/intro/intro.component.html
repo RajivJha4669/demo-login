@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="intro-slides-wrapper">
+    <ion-slides pager="true" class="intro-slide" [options]="slideOpts">
+      <ion-slide>
+        <div class="slide">
+          <h2>1. Headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore.
+          </p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide">
+          <h2>2. Headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore.
+          </p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide">
+          <h2>3. Headline</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore.
+          </p>
+          <div class="lets-go-button">
+            <ion-label>LOS GEHT’S!</ion-label>
+            <ion-button slot="end" expand="full" (click)="goToLogin()">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="skip" (click)="goToLogin()">
+      Skip
+    </div>
+
+  </div>
+</ion-content>

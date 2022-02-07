@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      PROFIL-ECKDATEN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">AUF DER SUCHE NACH</ion-label>
+      <div class="segments-wrapper">
+        <ion-segment mode="md" [(ngModel)]="lookinFor">
+          <ion-segment-button value="FESTANSTELLUNG">
+            <ion-label>FESTANSTELLUNG</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="PROJEKT">
+            <ion-label>PROJEKT</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div align="center">
+      <ion-label class="input-title">VERFÜGBAR IM ZEITRAUM</ion-label>
+      <div class="segments-wrapper">
+        <ion-segment mode="md" [(ngModel)]="availableForPeriod">
+          <ion-segment-button value="BEFRISTET">
+            <ion-label>BEFRISTET</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="UNBEFRISTET">
+            <ion-label>UNBEFRISTET</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      <div class="date-wrapper">
+        <div class="date-input">
+          <ion-label>Startzeitpunkt</ion-label>
+          <input type="date" name="" id="">
+        </div>
+        <div class="date-input">
+          <ion-label>Startzeitpunkt</ion-label>
+          <input type="date" name="" id="">
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
